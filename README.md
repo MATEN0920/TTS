@@ -6,9 +6,11 @@
 - 오픈소스 기반의 고품질 TTS 시스템
 - 하지만 기본적으로 영어 데이터셋에 최적화되어 있음
 - 한국어 음성을 자연스럽게 합성하려면, 대량의 한국어 음성 데이터(예: 50시간 이상)를 확보해 Tortoise TTS 모델을 재학습(fine-tuning)해야 할듯
+- https://github.com/neonbjb/tortoise-tts
 ## TensorFlow TTS
 - TensorFlow 기반의 TTS 라이브러리
 - 한국어 TTS를 위한 사전 학습된 모델도 존재하며, 이를 활용해 간단하게 한국어 텍스트를 음성으로 변환할 수 있음
+- https://github.com/TensorSpeech/TensorFlowTTS
 ## Coqui TTS
 - 오픈소스 딥러닝 기반의 TTS 툴킷
 - 다양한 언어(한국어 포함)와 목소리로 텍스트를 자연스러운 음성으로 변환할 수 있는 라이브러리
