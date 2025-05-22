@@ -22,5 +22,20 @@
 - 텍스트 입력만으로도 다양한 감정과 억양을 음성에 반영 가능
 - 한국 개발자들이 만든 모델로, 한국어 데이터셋 기반으로 학습된 모델
 - https://github.com/nari-labs/dia
-## 모델별 성능비교
-- 추가 예정
+# 모델별 성능비교
+## TTS 모델 성능 평가 기준
+### 주관적 평가
+1. MOS(Mean Opinion Score)
+- 사람이 직접 합성된 음성을 듣고 1~5점(혹은 1~4점) 척도로 자연스러움, 명료성, 전반적 품질을 평가
+- MOS 평가는 실제 사용자의 인식을 반영하지만, 많은 인력과 시간이 소요되는 단점이 존재
+### 객관적 평가
+1. MCD(Mel-Cepstral Distortion)
+- 합성 음성과 실제 음성의 스펙트럼 차이를 수치로 계산
+- 값이 낮을수록 품질이 좋음을 의미
+2. PESQ(Perceptual Evaluation of Speech Quality)
+- 음성 신호의 왜곡 정도를 평가하여 MOS와 유사한 점수로 환산
+3. STOI(Short-Time Objective Intelligibility)
+- 합성 음성이 얼마나 잘 들리는지(명료성)를 0~100%로 수치화
+4. CER(Character Error Rate)
+- 합성 음성을 음성 인식기로 텍스트로 변환한 뒤, 원래 입력 텍스트와 비교하여 문자 단위 오류율을 측정
+- 낮을수록 텍스트 전달력이 좋음을 의미
