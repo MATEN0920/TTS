@@ -21,10 +21,11 @@
 - 여러 명의 화자가 등장하는 대화체 음성을 자연스럽게 합성 가능
 - 텍스트 입력만으로도 다양한 감정과 억양을 음성에 반영 가능
 - 한국 개발자들이 만든 모델로, 한국어 데이터셋 기반으로 학습된 모델
+- https://github.com/nari-labs/dia
 ## Bark
 ## Tacotron
 ## Glow-TTS
-- https://github.com/nari-labs/dia
+
 # 모델별 성능비교
 ## TTS 모델 성능 평가 기준
 ### 주관적 평가
