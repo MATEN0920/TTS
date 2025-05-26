@@ -1,0 +1,26 @@
+## 합성 음성을 음성 인식기로 텍스트로 변환한 뒤, 원래 입력 텍스트와 비교하여 문자 단위 오류율을 측정
+
+## pip install openai-whisper python-Levenshtein
+import whisper
+from Levenshtein import distance
+
+# 1. Whisper 모델 불러오기 (base 모델도 충분히 사용 가능)
+model = whisper.load_model("base")
+
+# 2. STT 수행
+ref_result = model.transcribe("reference.wav")
+hyp_result = model.transcribe("synthesized.wav")
+
+ref_text = ref_result["text"].strip().lower()
+hyp_text = hyp_result["text"].strip().lower()
+
+# 3. CER 계산
+def calculate_cer(reference, hypothesis):
+    if len(reference) == 0:
+        return 1.0 if len(hypothesis) > 0 else 0.0
+    return distance(reference, hypothesis) / len(reference)
+
+cer_score = calculate_cer(ref_text, hyp_text)
+print(f"Reference:   {ref_text}")
+print(f"Hypothesis:  {hyp_text}")
+print("CER:", cer_score)

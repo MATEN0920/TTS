@@ -1,0 +1,32 @@
+## pip install openai-whisper jiwer
+
+import whisper
+import jiwer
+
+# 1. 원본 문장 (TTS 입력에 사용한 텍스트)
+reference_text = "안녕하세요. 오늘은 인공지능에 대해 이야기해볼게요."
+
+# 2. Whisper 모델 로드 (base 모델이면 빠르고 충분히 정확함)
+model = whisper.load_model("base")
+
+# 3. 합성된 음성 파일을 STT로 텍스트 변환
+result = model.transcribe("synthesized.wav", language="ko")
+hypothesis_text = result["text"].strip()
+
+print("🔹 TTS 원문:", reference_text)
+print("🔸 STT 결과:", hypothesis_text)
+
+# 4. CER 계산 (전처리 적용)
+transformation = jiwer.Compose([
+    jiwer.RemovePunctuation(),
+    jiwer.Strip(),
+    jiwer.ToLowerCase()
+])
+
+measures = jiwer.compute_measures(
+    reference_text, hypothesis_text,
+    truth_transform=transformation,
+    hypothesis_transform=transformation
+)
+
+print("✅ CER (Character Error Rate):", measures["cer"])
