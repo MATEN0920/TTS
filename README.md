@@ -2,11 +2,6 @@
 ## Google TTS(gTTS)
 - 간단하고 사용 방법이 비교적 간단함
 - 하지만 조정 가능한 옵션(목소리, 속도, 말하는 방식 등)이 매우 적어서 프로젝트에 사용하기는 어려울 듯
-## Tortoise TTS
-- 오픈소스 기반의 고품질 TTS 시스템
-- 하지만 기본적으로 영어 데이터셋에 최적화되어 있음
-- 한국어 음성을 자연스럽게 합성하려면, 대량의 한국어 음성 데이터(예: 50시간 이상)를 확보해 Tortoise TTS 모델을 재학습(fine-tuning)해야 할듯
-- https://github.com/neonbjb/tortoise-tts
 ## TensorFlow TTS
 - TensorFlow 기반의 TTS 라이브러리
 - 한국어 TTS를 위한 사전 학습된 모델도 존재하며, 이를 활용해 간단하게 한국어 텍스트를 음성으로 변환할 수 있음
