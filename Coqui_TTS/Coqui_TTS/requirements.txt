@@ -1,0 +1,31 @@
+# requirements.txt for Coqui TTS + multilingual model (xtts_v2)
+
+# Core dependencies
+torch>=2.0
+torchaudio>=2.0
+TTS>=0.21.0
+
+# Hugging Face model download
+transformers>=4.30.0
+sentencepiece>=0.1.99
+
+# Audio handling
+soundfile
+numpy
+scipy
+pydub
+librosa
+
+# Text preprocessing
+unidecode
+inflect
+nltk
+jieba
+pypinyin
+
+# TTS internal dependencies
+coqpit
+trainer
+fsspec
+
+# (System requirement: ffmpeg needs to be installed separately)
