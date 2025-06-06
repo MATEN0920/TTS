@@ -8,7 +8,7 @@
 - https://github.com/TensorSpeech/TensorFlowTTS
 ## Coqui TTS
 - 오픈소스 딥러닝 기반의 TTS 툴킷
-- 다양한 언어(한국어 포함)와 목소리로 텍스트를 자연스러운 음성으로 변환할 수 있는 라이브러리
+- 다양한 언어와 목소리로 텍스트를 자연스러운 음성으로 변환할 수 있는 라이브러리
 - 1100개 이상의 언어에 대한 사전학습(pretrained) 모델을 제공하며, 음성 합성, 음성 클로닝(voice cloning), 커스텀 음성 생성 등 고급 기능을 지원
 - https://github.com/coqui-ai/TTS
 ## Dia
