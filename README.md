@@ -19,6 +19,7 @@
 - https://github.com/nari-labs/dia
 ## Bark
 ## Tacotron
+- 현재 학습중
 ## Glow-TTS
 
 # 모델별 성능비교
