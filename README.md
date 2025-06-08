@@ -19,7 +19,8 @@
 - https://github.com/nari-labs/dia
 ## Bark
 ## Tacotron
-- 현재 학습중
+- 구글이 2018년에 발표한 자연스러운 음성 합성을 위한 딥러닝 기반 텍스트-투-스피치(Text-to-Speech, TTS) 모델
+- 현재 한국어 언어로 사전학습된 모델이 오픈소스에 존재하지 않아 Korean Single Speaker Speech Dataset로 한국어 학습 중
 ## Glow-TTS
 
 # 모델별 성능비교
