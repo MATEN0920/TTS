@@ -17,7 +17,6 @@
 - 텍스트 입력만으로도 다양한 감정과 억양을 음성에 반영 가능
 - 한국 개발자들이 만든 모델로, 한국어 데이터셋 기반으로 학습된 모델
 - https://github.com/nari-labs/dia
-## Bark
 ## Tacotron
 - 구글이 2018년에 발표한 자연스러운 음성 합성을 위한 딥러닝 기반 텍스트-투-스피치(Text-to-Speech, TTS) 모델
 - 현재 한국어 언어로 사전학습된 모델이 오픈소스에 존재하지 않아 Korean Single Speaker Speech Dataset로 한국어 학습 중
